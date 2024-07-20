@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --index: calc(1vw + 1vh)
+}
+@font-face {
+    font-family: raleway_f;
+    src: url(Fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: raleway_f;
+    src: url(Fonts/raleway-black.woff2);
+    font-weight: 900;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.93);
+    font-family: raleway_f, serif;
+    line-height: 1.6;
+}
+
+.main-header {
+    position: relative;
+}
+
+
+/*.main-header::after {
+    content: '';
+    position: absolute;
+    z-index: 10000000;
+    width: 100%;
+    height: calc(var(--index) * 1000);
+    background-image: url(Images/ground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: calc(var(--index) * -10.5);
+
+}*/
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layers-base,
+.layers-middle,
+.layers-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: 2;
+}
+
+.layers-base {
+    background-image: url(Images/layer-base.png);
+    z-index: -100;
+}
+
+.layers-middle {
+    background-image: url(Images/layer-middle.png);
+
+}
+
+.layers-front {
+    background-image: url(Images/layer-front.png);
+    z-index: 3;
+
+}
+
+.layer-header {
+    z-index: 1;
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(220, 212, 191);
+    text-shadow: 0 0 15px rgb(210, 164, 96);
+}
+
+.layer-title {
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2);
+}
+
+.layer-caption {
+    font-size: calc(var(--index) / 1.2);
+    letter-spacing: calc(var(--index) / 4);
+}
+
+
+.main-article {
+    background-image: url(Images/dungeon.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: rgb(220, 212, 191);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(114, 99, 79);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-article-content {
+    margin-right: 350px;
+    margin-left: 350px;
+    font-size: calc(var(--index) / 1.2);
+    letter-spacing: calc(var(--index) / 10);
+    will-change: transform;
+
+}
+
+.main-container {
+    background-color: black;
+}
+
