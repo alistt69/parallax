@@ -1,10 +1,6 @@
 import './App.css'
 import {useEffect, useRef, useState} from "react";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-//import LocomotiveScroll from "locomotive-scroll"
-//import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation} from '@ap.cx/react-fullpage'
-
-
 
 
 function App() {
