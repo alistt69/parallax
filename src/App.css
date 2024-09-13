@@ -27,21 +27,6 @@ body {
     position: relative;
 }
 
-
-/*.main-header::after {
-    content: '';
-    position: absolute;
-    z-index: 10000000;
-    width: 100%;
-    height: calc(var(--index) * 1000);
-    background-image: url(Images/ground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    bottom: calc(var(--index) * -10.5);
-
-}*/
-
 .layers {
     height: 100vh;
     display: flex;
