@@ -1,17 +1,17 @@
 import './App.css'
-import {useEffect, useRef, useState} from "react";
+import { useRef } from "react";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 
 function App() {
 
-    const containerRef = useRef(null)
+  const containerRef = useRef(null)
 
   return (
       <>
 
           <LocomotiveScrollProvider options={{smooth: true,}} containerRef={containerRef}>
-              <main data-scroll-container="" ref={containerRef} style={{height: '1400px'}}>
+              <main data-scroll-container="" ref={containerRef}>
                   <div data-scroll-section="">
                       <header className="main-header">
                           <div className="layers">
@@ -61,9 +61,3 @@ function App() {
 }
 
 export default App
-
-
-{/*          <Fullpage>
-              <FullpageNavigation />
-              <FullPageSections>
-                  <FullpageSection className="main-header">*/}

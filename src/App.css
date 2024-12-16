@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 :root {
     --index: calc(1vw + 1vh)
 }
+
 @font-face {
     font-family: raleway_f;
     src: url(Fonts/raleway-regular.woff2);
@@ -17,10 +20,17 @@
     font-weight: 900;
 }
 
+main {
+    height: calc(200vh - 135px);
+    overflow: hidden;
+}
+
 body {
     background-color: rgba(0, 0, 0, 0.93);
     font-family: raleway_f, serif;
     line-height: 1.6;
+    height: calc(200vh - 135px);
+    overflow: hidden;
 }
 
 .main-header {
